@@ -9,11 +9,13 @@ I created two masks ( left and right) to detect lane lines to avoid lack of reso
 
 potential shortcomings: 
 
-1. In occations when only applying canny could not differencitate to much such as there is some damage or while/yellow marks on the road
+1. In occations when only applying canny could not differencitate lane lines and the road such as there is some damage of the lane line or while/yellow marks/objects on the road
 
 2. The program is confited to a predifined parameter for canny, color selection or hough transfer, however, the real road image is unforseen, so a smarter program should be able to detect the color of the lane within a predefined mask and then apply certain parameters based on the image it processed and update those parameters within certain time.
 
 3. when there is a curved line, there should be more masks covering different areas of the lane lines which could better capture the curved lane lines
+
+4. By trying to apply a mask first then apply canny and hough transfer to dissect different areas using python, haven find a method to avoid using canny also detect the edges of those masks. 
 
 possible improvements could be:
 
