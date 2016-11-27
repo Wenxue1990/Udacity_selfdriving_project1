@@ -7,11 +7,12 @@ The project provides with a clear structure to process images/videos, using cann
 
 I created two masks ( left and right) to detect lane lines to avoid lack of resolusion of Hough transfer at the far end of the rode 
 
-potential shortcomings: in occations when only applying canny could not differencitate to much such as there is some damage or while/yellow marks on the road, a filter of the angle of hough transferred lines could well filter those noises.
+potential shortcomings: 
+1. In occations when only applying canny could not differencitate to much such as there is some damage or while/yellow marks on the road
 
-The program is confited to a predifined parameter for canny, color selection or hough transfer, however, the real road image is unforseen, so a smarter program should be able to detect the color of the lane within a predefined mask and then apply certain parameters based on the image it processed and update those parameters within certain time.
+2. The program is confited to a predifined parameter for canny, color selection or hough transfer, however, the real road image is unforseen, so a smarter program should be able to detect the color of the lane within a predefined mask and then apply certain parameters based on the image it processed and update those parameters within certain time.
 
-when there is a curved line, there should be more masks covering different areas of the lane lines which could better capture the curved lane lines
+3. when there is a curved line, there should be more masks covering different areas of the lane lines which could better capture the curved lane lines
 
 possible improvements could be:
 
